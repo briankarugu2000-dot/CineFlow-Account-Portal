@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlow Creator Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Join the CineFlow Creator Program</h1>
+        <p>Fill in the form below to create your account</p>
+    </header>
+
+    <main>
+        <section id="promo">
+            <h2>Welcome Video</h2>
+            <p>Watch this short video before registering</p>
+
+            <video width="560" controls poster="Assets/images/Videos/img/975bea08-8b2a-4855-9a28-dcfceeb969d4.jpg">
+                <source src="Assets/images/Videos/169476-841382886.mp4" type="video/mp4">
+                <source src="Assets/images/Videos/file_example_WEBM_480_900KB.webm" type="video/webm">
+                
+            </video>
+
+            <h3>Audio Tips</h3>
+            <p>Listen to some helpful tips below</p>
+            <Audio controls>
+                <source src="Assets/images/Videos/Audio/expmp3-psycho-song-507541.mp3"type="audio/mp3">
+            </Audio>
+        </section>
+
+        <section id="registration">
+            <form action="/submit-registration" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder=" e.g.Brian01" pattern="[a-zA-Z0-9]+" required><br><br>
+
+                    <label for="emails">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="e.g. brian@gmail.com" required><br><br>
+
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="atleast 8 characters" required><br><br>
+
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" max="2007-04-28" required><br><br>
+
+                    <label for="photo">Profile Picture</label><br>
+                    <input type="file" id="photo" name="photo" accept=".jpg,.png" required><br><br>
+
+                    <p>Content Genres</p>
+                    <label><input type="checkbox" name="genre" value="tech">Tech</label>
+                    <label><input type="checkbox" name="genre" value="lifestyle">Lifestyle</label>
+                    <label><input type="checkbox" name="genre" value="gaming">Gaming</label>
+                    <label><input type="checkbox" name="genre" value="education">Education</label>
+
+                </fieldset>
+
+                <button type="submit">Register Account</button>
+                <button type="reset">Clear form</button>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>CineFlow 2026</p>
+        <p><a href="mailto:support@cineflow.com">Contact Support</a></p>
+    </footer>
+</body>
+</html>
